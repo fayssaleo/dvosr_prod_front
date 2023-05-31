@@ -1,0 +1,347 @@
+.v-application--wrap {
+  min-height: fit-content;
+  min-height: 100% !important;
+}
+
+.v-menu__content {
+  margin-top: 2px !important ;
+  border-top-left-radius: 21px !important;
+}
+.v-overlay {
+  min-height: 100vh;
+}
+.v-navigation-drawer {
+  min-height: 100vh;
+}
+.form2 .v-input__control {
+  margin-bottom: -17px;
+}
+.visselArrived .v-input__control {
+  margin-bottom: 0;
+}
+
+@keyframes successWidthANimation {
+  from {
+    width: 0 !important;
+  }
+  to {
+    width: 350px !important;
+  }
+}
+.successSnackBar .v-snack__wrapper {
+  min-height: 36px !important;
+  background-color: #69f0ae;
+  color: white;
+  animation-name: successWidthANimation;
+  animation-duration: 4s;
+  position: absolute;
+  top: 70px;
+  right: 0;
+}
+.failedSnackBar .v-snack__wrapper {
+  min-height: 36px !important;
+  background-color: #ff5722;
+  color: white;
+  animation-name: successWidthANimation;
+  animation-duration: 4s;
+  position: absolute;
+  top: 70px;
+  right: 0;
+}
+.successSnackBar .v-btn {
+  color: white !important;
+}
+.failedSnackBar .v-btn {
+  color: white !important;
+}
+.int-pm {
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  .v-text-field__details {
+    display: none !important;
+  }
+  .int-pm-value {
+    min-width: 60%;
+    max-height: 55px;
+    font-size: 19px;
+    font-weight: 500 !important;
+    padding-top: 13px !important;
+  }
+  .int-pm-increment {
+    min-width: 20%;
+    font-size: 27px;
+    background-color: white !important;
+    font-weight: 800;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #0000006e !important;
+  }
+  .int-pm-decrement {
+    min-width: 20%;
+    font-size: 27px;
+    background-color: white !important;
+    font-weight: 800;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    color: #0000006e !important;
+  }
+  .int-pm-increment:active {
+    background-color: rgba(0, 0, 0, 0.212) !important;
+  }
+  .int-pm-decremen:active {
+    background-color: rgba(0, 0, 0, 0.212) !important;
+  }
+}
+.v-application p {
+  margin-bottom: -5px !important;
+}
+.voyagevessel {
+  font-size: 14px !important;
+  font-weight: 900 !important;
+  color: black !important;
+  input {
+    color: black !important;
+  }
+}
+.tableheader th {
+  background-color: #90a4ae;
+}
+.tableheader tr {
+  background-color: #eceff1;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.tableheader tr:hover {
+  background: #cfd8dc !important;
+}
+.tableheaderTerminalReadeness th {
+  background-color: #466d81;
+}
+.tableheaderTerminalReadeness tr {
+  background-color: #bfd8eb;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.tableheaderTerminalReadeness tr:hover {
+  background: #2f8cb4 !important;
+  color: white;
+}
+.craneButton {
+  margin-right: 17px;
+  box-shadow: 2px -1px 10px 5px #616161c2;
+  background-color: #5e35b1;
+  text-align: center;
+  width: 120px;
+  font-size: 16px;
+  padding-top: 21px;
+  cursor: pointer;
+}
+.craneButton:hover {
+  background-color: #7e57c2;
+}
+.craneButton:active {
+  background-color: #b39ddb;
+}
+.vesselButton {
+  margin-right: 17px;
+  box-shadow: 2px -1px 10px 5px #616161c2;
+  background-color: #00bfa5;
+  text-align: center;
+  width: 120px;
+  font-size: 16px;
+  padding-top: 21px;
+  cursor: pointer;
+}
+.vesselButton:hover {
+  background-color: #26a69a;
+}
+.vesselButton:active {
+  background-color: #80cbc4;
+}
+.tableVoyageSearchBar {
+  .v-text-field__details {
+    display: none !important;
+  }
+  .v-input__slot {
+    margin-bottom: 0 !important;
+  }
+}
+.delaycodeSelect {
+  .v-text-field__details {
+    display: none !important;
+  }
+  .v-input__slot {
+    margin-bottom: 0 !important;
+  }
+}
+.DelayCodeTextArea {
+  min-height: 272px !important;
+}
+.vue-html2pdf {
+  .content-wrapper {
+    width: 1100px !important;
+  }
+  .layout-container {
+    justify-content: start;
+  }
+}
+.arrivaleTabs {
+  .v-tab--active {
+    background-color: #0000004a !important;
+    border-bottom: 8px solid #0000004d;
+  }
+}
+.departureTabs {
+  .v-tab--active {
+    background-color: rgb(0 0 0 / 60%) !important;
+    border-bottom: 8px solid rgb(255 255 255 / 53%);
+  }
+}
+.beforeButton {
+  * {
+    color: #ef5350 !important;
+    caret-color: #ef5350 !important;
+  }
+}
+.afterButton {
+  * {
+    color: #8bc34a !important;
+    caret-color: #8bc34a !important;
+  }
+  .white--text {
+    color: #8bc34a !important;
+    caret-color: #8bc34a !important;
+  }
+}
+.beforeSwitch {
+  .v-label {
+    color: #ff5722 !important;
+    font-weight: 900;
+  }
+}
+.afterSwitch {
+  .v-label {
+    color: #4caf50 !important;
+    font-weight: 900;
+  }
+}
+
+.beforeText {
+  color: #ff5722 !important;
+  font-weight: 900;
+  span {
+    color: #ff5722 !important;
+    font-weight: 900;
+  }
+  * {
+    color: #ff5722 !important;
+    font-weight: 900;
+  }
+}
+.afterText {
+  color: #4caf50 !important;
+  font-weight: 900;
+  span {
+    color: #4caf50 !important;
+    font-weight: 900;
+  }
+  * {
+    color: #4caf50 !important;
+    font-weight: 900;
+  }
+}
+.arrivaleTabsChanged {
+  .beforeText {
+    color: #ff5722 !important;
+    font-weight: 900 !important;
+    * {
+      color: #ff5722 !important;
+      font-weight: 900 !important;
+    }
+  }
+  .afterText {
+    color: #4caf50 !important;
+    font-weight: 900 !important;
+    * {
+      color: #4caf50 !important;
+      font-weight: 900 !important;
+    }
+  }
+}
+.added {
+  * {
+    background-color: #4caf50 !important;
+    color: white !important;
+  }
+}
+.deleted {
+  * {
+    background-color: #ff5722 !important;
+    color: white !important;
+  }
+}
+.updated {
+  .updatedAfter {
+    color: #4caf50 !important;
+    font-weight: 900 !important;
+  }
+  .updatedBefore {
+    color: #ff5722 !important;
+    font-weight: 900 !important;
+  }
+}
+.crane-dropdown {
+  z-index: 10001;
+  .v-select {
+    z-index: 10001;
+  }
+}
+.voyageVesselShowInFirst {
+  z-index: 10001;
+  * {
+    z-index: 10001;
+  }
+  .v-application {
+    border-radius: 20px;
+  }
+  .rowInTheVoyageVessel {
+    padding-top: 15px;
+    padding-left: 14px;
+    padding-right: 13px;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .voyageButton {
+    height: 29px !important;
+    min-width: 10px !important;
+    display: block;
+    padding: 0 16px;
+    margin-top: 6px;
+    margin-bottom: 3px;
+    width: 107px;
+  }
+}
+
+.LiftsTable {
+  text-align: center !important;
+  .text-start {
+    text-align: center !important;
+    span {
+      font-weight: 800;
+      text-align: center !important;
+    }
+  }
+  font-weight: bold !important;
+}

@@ -1,0 +1,2 @@
+1- docker build -t dvosr_front_image .
+2- docker run -it -p 9000:80 --rm --name dvosr_front_container dvosr_front_image

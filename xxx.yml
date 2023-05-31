@@ -1,0 +1,49 @@
+version: "3.7"
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    networks:
+      - app
+    environment:
+      DB_HOST: db
+      DB_DATABASE: dvosr
+      DB_USERNAME: root
+      DB_PASSWORD: root
+    ports:
+      - 8000:8000
+    volumes:
+      - ./backend:/app/backend
+    depends_on:
+      - db
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    networks:
+      - app
+    ports:
+      - 3000:3000
+    tty: true
+    volumes:
+      - ./frontend:/app/frontend
+    depends_on:
+      - backend
+
+  db:
+    image: mysql:5.7.22
+    environment:
+      MYSQL_DATABASE: "dvosr"
+      MYSQL_USER: "root"
+      MYSQL_PASSWORD: "root"
+      MYSQL_ROOT_PASSWORD: "root"
+    networks:
+      - app
+    volumes:
+      - ./mysql:/var/lib/mysql
+
+networks:
+  app:
+    driver: bridge
